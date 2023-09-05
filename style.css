@@ -1,0 +1,91 @@
+/* Reset default styles for various elements */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: #e9ec14;
+    font-size: 80px;
+}
+
+/* Style for the body element */
+body {
+    background-color: #e9ec14;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Style for the main container */
+.main-container {
+    border: 2px dotted;
+    background-color: black;
+    width: 50%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 1%;
+    margin: 1%;
+}
+
+/* Style for the stopwatch container */
+.stopwatch-container {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    margin: 1%;
+}
+
+/* Style for individual stopwatch elements */
+.stopwatch-container span {
+    width: 30%;
+    margin: 1%;
+    text-align: center;
+}
+
+/* Style for buttons and button container */
+.buttons {
+    margin: 3%;
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    justify-content: center;
+}
+
+/* Style for individual buttons */
+.buttons button {
+    background-color: #e9ec14;
+    margin: 3%;
+    color: #000;
+    border: none;
+    border-radius: 20%;
+    font-size: 25px;
+    padding: 3%;
+}
+
+/* Hover effect for buttons */
+.buttons button:hover {
+    background-color: #1d1d1b;
+    color: #e9ec14;
+}
+
+/* Media Queries for responsive design */
+@media (max-width: 1120px) {
+    * {
+        font-size: 50px;
+    }
+    .main-container {
+        width: 80%;
+    }
+}
+
+@media (max-width: 768px) {
+    .main-container {
+        width: 100%;
+    }
+    .stopwatch-container {
+        width: 80%;
+    }
+}
